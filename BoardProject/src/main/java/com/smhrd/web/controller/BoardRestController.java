@@ -12,7 +12,7 @@ import com.smhrd.web.service.BoardService;
 
 @RestController
 //@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")
-@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")
+@CrossOrigin(origins = "http://10.1.1.6", allowedHeaders = "*")
 public class BoardRestController {
 	
 	@Autowired
