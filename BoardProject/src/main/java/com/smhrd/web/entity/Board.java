@@ -28,8 +28,11 @@ public class Board {
 	private String b_content;
 	@Column(updatable = false)
 	private String b_writer;
-	@JsonFormat(pattern = "yyyy-MM-dd")
 	
+	@Column(length=200)
+	private String b_file_path; // 파일 경로를 저장하는 컬럼추가
+	
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Column(insertable = false, updatable=false, columnDefinition = "datatime default now()")
 	private LocalDateTime b_datetime;
 	@Column(insertable = false, updatable =false, columnDefinition = "int default 0")
